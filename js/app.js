@@ -80,4 +80,31 @@ while(chances > 0){
   //too high if
 }//closes while
 alert('the correct answer is ' + guessNum);
+let states = ['poke bowl','salmon chazuke','rice','brats','noodles','sushi','coffee'];
+console.log(states.length);
+
+let attempts = 0;
+let correctAnswer = 0;
+
+while(attempts !== 7){
+  let userAnswer = prompt('What are my favorite foods?');
+  let userAnswerTrimmedToUpperCase = userAnswer.toUpperCase().trim();
+  console.log('userAnswerTrimmedToUpperCase',userAnswerTrimmedToUpperCase);
+
+  if(states.indexOf(userAnswerTrimmedToUpperCase) >= 0){
+    alert('Yes! ' + userAnswerTrimmedToUpperCase + ' is one of my favorite foods.');
+    correctAnswer = correctAnswer + 1;
+    // correctAnswer += 1;
+    // correctAnswer++;
+  } else {
+    alert('Not my favorite, but I like that too!@!!#%^#%%^');
+  }
+
+  attempts = attempts + 1;
+
+}
+
+alert('All of my favorite foods are: ' + states.join(', '));
+alert('You answered ' + correctAnswer + ' out of 7 correctly');
+alert('Thanks for Playin...');
 
