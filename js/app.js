@@ -100,6 +100,7 @@ function questionSix(){
 questionSix();
 
 
+
 //create an array
 
 let favoriteFood = ['poke bowl','salmon chazuke','rice','brats','noodles','sushi','coffee'];
